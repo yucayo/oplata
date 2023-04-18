@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="STYLESHEET" href="CSS/bootstrap.min.css">
+    <link rel="shortcut icon" href="IMAGES/icons8-приложение-amazon-shopping-16.png" type="image/x-icon">
+    <link rel="STYLESHEET" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <title>Оплата товара</title>
+    <style>
+     body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+     }
+     h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+     }
+     form {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      max-width: 500px;
+      margin: 0 auto;
+     }
+     label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+     }
+     input[type="text"], input[type="email"], select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: none;
+      margin-bottom: 20px;
+      font-size: 16px;
+      box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+     }
+     button {
+      display: block;
+      margin: 0 auto;
+      background-color: #ff3366;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+     }
+     button:hover {
+      background-color: #e6264c;
+     }
+     .success-message {
+      background-color: #a5d6a7;
+      color: #2e7d32;
+      padding: 10px;
+      border-radius: 4px;
+      margin-top: 20px;
+     }
+     .error-message {
+      background-color: #ffcdd2;
+      color: #c62828;
+      padding: 10px;
+      border-radius: 4px;
+      margin-top: 20px;
+     }
+    </style>
+   </head>
+   <body>
+   
+    <h1>Оплата товара</h1>
+   
+    <form>
+     <label>Имя и фамилия</label>
+     <input type="text" name="name" required>
+     <label>Адрес доставки</label>
+     <input type="text" name="address" required>
+     <label>Электронная почта</label>
+     <input type="email" name="email" required>
+     <label>Способ оплаты</label>
+     <select name="payment">
+      <option value="card">Карта</option>
+      <option value="paypal">Paypal</option>
+     </select>
+     <button>Оплатить</button>
+    </form>
+   
+   </body>
+   </html>
